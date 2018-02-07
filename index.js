@@ -3,7 +3,7 @@ var LRU = function (config) {
     config = config || {};
     if (typeof config === 'number') config = { maxSize: config };
     var maxSize = config.maxSize || 100;
-    var onPop = config.onPop || function (key, val) {};
+    var onPop = config.onEvict || function (key, val) {};
     var keyNodes = {};
     var size = 0;
     var headKey = null;
@@ -72,13 +72,17 @@ var LRU = function (config) {
         node.prev = null;
         node.next = null;
     };
-    var valueOf = function (key) {
+    var _val = function (key, val) {
         if (!have(key)) return;
+        if (arguments.length > 1) {
+            keyNodes[key].value = val;
+            return val;
+        }
         return keyNodes[key].value;
     };
     var get = function (key) {
         if (!have(key)) return;
-        var val = valueOf(key);
+        var val = _val(key);
         set(key, val);
         return val;
     };
@@ -122,7 +126,7 @@ var LRU = function (config) {
     };
 
     this.set = set;
-    this.val = valueOf;
+    this.val = _val;
     this.get = get;
     this.remove = remove;
     this.clear = clear;
