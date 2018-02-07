@@ -9,10 +9,22 @@
   "scripts": {
     "test": "node ./test/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenfe/lru.git"
+  },
   "keywords": [
     "lru",
     "cache"
   ],
   "author": "hengwu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "vows": "^0.8.1"
+  },
+  "bugs": {
+    "url": "https://github.com/shenfe/lru/issues"
+  },
+  "homepage": "https://github.com/shenfe/lru#readme"
 }
