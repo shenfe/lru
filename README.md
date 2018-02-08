@@ -4,7 +4,7 @@
 
 LRU (Least Recently Used) Cache.
 
-* single file
+* single file ✨
 * browser✔
 * Node.js✔
 * <del>dependencies</del>
@@ -49,6 +49,12 @@ lru.remove('a');
 lru.keys();
 lru.size();
 lru.clear();
+```
+
+## Test
+
+```bash
+npm run test
 ```
 
 ## License
