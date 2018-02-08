@@ -1,6 +1,6 @@
 {
   "name": "llrruu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lru",
   "main": "index.js",
   "directories": {

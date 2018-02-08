@@ -172,12 +172,12 @@ suite.addBatch({
 });
 
 suite.addBatch({
-    'pop event': {
-        '\'pop\' event is fired when popping old keys': function () {
+    'evict event': {
+        '\'evict\' event is fired when popping old keys': function () {
             const events = [];
             const lru = new LRU({
                 maxSize: 2,
-                onPop: (key, value) => events.push({ key, value })
+                onEvict: (key, value) => events.push({ key, value })
             });
             lru.set('foo1', 'bar1');
             lru.set('foo2', 'bar2');
