@@ -1,6 +1,15 @@
 # lru
 
+<a href="https://www.npmjs.com/package/llrruu"><img src="https://img.shields.io/npm/v/llrruu.svg"></a>
+
 LRU (Least Recently Used) Cache.
+
+* single file
+* browser✔
+* Node.js✔
+* <del>dependencies</del>
+* <del>babel</del>
+* <del>polyfills</del>
 
 ## Installation
 
