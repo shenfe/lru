@@ -2,7 +2,7 @@
 
 <a href="https://www.npmjs.com/package/llrruu"><img src="https://img.shields.io/npm/v/llrruu.svg"></a>
 
-LRU (Least Recently Used) Cache.
+♻️ LRU (Least Recently Used) Cache.
 
 * single file ✨
 * browser✔
@@ -14,7 +14,7 @@ LRU (Least Recently Used) Cache.
 ## Installation
 
 ```bash
-npm install --save llrruu
+$ npm install --save llrruu
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ lru.clear();
 ## Test
 
 ```bash
-npm run test
+$ npm run test
 ```
 
 ## License
