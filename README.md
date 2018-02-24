@@ -1,4 +1,4 @@
-# lru <a href="https://www.npmjs.com/package/llrruu"><img src="https://img.shields.io/npm/v/llrruu.svg"></a>
+# *lru* <a href="https://www.npmjs.com/package/llrruu"><img src="https://img.shields.io/npm/v/llrruu.svg"></a>
 
 ♻️ LRU (Least Recently Used) Cache.
 
