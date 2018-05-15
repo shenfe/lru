@@ -52,7 +52,7 @@ lru.clear();
 ## Test
 
 ```bash
-$ npm run test
+$ npm test
 ```
 
 ## License
